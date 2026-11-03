@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#faf9f6" />
+    <meta
+      name="description"
+      content="Zed Li — software developer, master's student, and curious human based in Toronto."
+    />
+    <title>Zed Li — Software Developer</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="config.js"></script>
+    <script defer src="posts.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="logo" href="#/" aria-label="Zed Li, home">zed<span>.</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a data-nav="home" href="#/" data-i18n="navHome">Home</a>
+          <a data-nav="about" href="#/about" data-i18n="navAbout">About</a>
+          <a data-nav="blog" href="#/blog" data-i18n="navBlog">Writing</a>
+          <a data-nav="contact" href="#/contact" data-i18n="navContact">Contact</a>
+        </nav>
+        <div class="controls">
+          <button id="language" type="button" aria-label="Switch language">中文</button>
+          <button id="theme" type="button" aria-label="Switch theme" title="Switch theme">☾</button>
+        </div>
+      </header>
+      <main id="app" tabindex="-1"></main>
+      <footer class="footer">
+        <span
+          >© <span id="year"></span> Zed Li
+          <span class="muted">· Built with curiosity.</span></span
+        ><span class="muted" id="footer-location">Toronto, Canada</span>
+      </footer>
+    </div>
+    <div id="notice" class="notice" role="status" aria-live="polite"></div>
+  </body>
+</html>
